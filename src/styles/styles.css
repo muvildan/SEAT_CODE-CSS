@@ -327,7 +327,7 @@ h4 {
   width: 80%;
   margin: 10px 0 0 0;
   text-align: start;
-  color: #554DDE;
+  color: #554dde;
 }
 .features__description {
   max-width: 80%;
@@ -378,7 +378,7 @@ h4 {
 .features__small-card h2 {
   margin: 20px 0;
   line-height: 25px;
-  color: #554DDE;
+  color: #554dde;
 }
 .features__big-card {
   display: flex;
@@ -390,12 +390,12 @@ h4 {
   align-items: center;
   align-self: center;
   width: 320px;
-  height: 120px;
+  height: 150px;
   margin-bottom: 40px;
 }
-.features__big-card img {
+.features__big-card canvas {
   max-width: 95%;
-  max-height: 95%;
+  height: 95%;
 }
 .features__languages-profiles {
   display: flex;
@@ -554,10 +554,10 @@ h4 {
   width: 81%;
   margin-bottom: 10px;
   text-align: start;
-  color: #554DDE;
+  color: #554dde;
 }
 .pricing__title-span {
-  color: #F44E77 !important;
+  color: #f44e77 !important;
 }
 .pricing__description {
   max-width: 80%;
@@ -683,10 +683,10 @@ h4 {
   width: 80%;
   margin-bottom: 10px;
   text-align: start;
-  color: #554DDE;
+  color: #554dde;
 }
 .faq__title-span {
-  color: #F44E77 !important;
+  color: #f44e77 !important;
 }
 .faq__description {
   max-width: 80%;
@@ -933,7 +933,7 @@ input:checked + details {
   max-height: 35px;
   padding: 5px 10px;
   color: #FFFFFF;
-  background-color: #F44E77;
+  background-color: #f44e77;
   border: none;
   border-radius: 15px;
   white-space: nowrap;
@@ -975,9 +975,10 @@ input:checked + details {
 }
 swiper-container {
   margin: 0;
-  padding: 0;
+  padding: 0 40px;
   overflow: visible;
-  min-width: 100vw;
+  min-width: 85vw;
+  max-width: 100vw;
   height: 100%;
 }
 swiper-slide {
