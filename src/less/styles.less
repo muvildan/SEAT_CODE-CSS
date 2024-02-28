@@ -3,21 +3,56 @@
 @import "./components/hero.less";
 @import "./components/features.less";
 @import "./components/pricing.less";
+@import "./components/faq.less";
+@import "./components/footer.less";
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: @font-family;
     background-color: @neutral-color;
     margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+details > summary {
+    list-style: none;
+}
+
+  details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details {
+    height: fit-content;
+    max-height: 2.8rem;
+    overflow: hidden;
+    transition: max-height 400ms ease-out;
+}
+
+input {
+    display: none;
+}
+
+input:checked + details {
+    max-height: 200px;
 }
 
 // Common to several sections
 .accent-button {
-    max-height: 25px;
-    padding: 0 10px;
+    max-height: 35px;
+    padding: 5px 10px;
     color: @white;
     background-color: @accent-color;
     border: none;
     border-radius: 15px;
+    white-space: nowrap;
 }
 
 .secondary-button {
@@ -27,10 +62,11 @@ body {
     align-items: center;
     gap: 10px;
     color: @white;
-    padding: 5px 15px;
+    padding: 10px 20px;
     background-color: @secondary-dark-color;
     border: none;
     border-radius: 15px;
+    white-space: nowrap;
 }
 
 .secondary-button img {
@@ -40,7 +76,27 @@ body {
 
 .tertiary-button {
     border: @secondary-dark-color solid 1.5px;
-    padding: 15px;
+    padding: 12px;
     border-radius: 20px;
     background-color: @white;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: @tablet) {
+    // Styles for tablet view
+    .accent-button {
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    .secondary-button {
+        gap: 20px;
+        padding: 15px 30px;
+        border-radius: 20px;
+    }
+    
+}
+
+@media screen and (min-width: @desktop) {
+    // Styles for desktop view
 }

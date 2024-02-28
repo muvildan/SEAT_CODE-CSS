@@ -2,21 +2,26 @@
 
 // Header
 .header {
+    background-image: url('../../../src/assets/mobile-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+
     &__container {
-        margin: 10px 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        justify-items: center;
     }
 
     &__logo img {
+        margin: 10px 0 0 20px;
         max-width: 40px;
         max-height: 40px;
     }
 
     &__nav-list {
-        padding: 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -25,18 +30,40 @@
     }
 
     &__nav-link {
-        color: @black;
+        color: @white;
         text-decoration: none;
+    }
+
+    &__signup-button {
+        margin: 0 20px 0 0;
     }
 }
 
 @media screen and (min-width: @tablet) {
     // Styles for tablet view
+    .header {
+        background-image: url('../../../src/assets/tablet-bg.png');
+
+        &__logo img {
+            max-width: 50px;
+            max-height: 50px;
+        }
+
+        &__nav-list {
+            font-size: 17px;
+            min-width: 40vw;
+            gap: 40px;
+        }
+    }
 }
 
 @media screen and (min-width: @desktop) {
     // Styles for desktop view
-    header .accent-button {
+    .header {
+        background-image: url('../../../src/assets/desktop-bg.png');
+    }
+
+    .header .accent-button {
         max-height: none;
         border-radius: 20px;
     }
