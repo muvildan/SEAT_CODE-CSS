@@ -31,7 +31,7 @@ details > summary {
 
 details {
     height: fit-content;
-    max-height: 2.8rem;
+    max-height: 3rem;
     overflow: hidden;
     transition: max-height 400ms ease-out;
 }
@@ -53,6 +53,8 @@ input:checked + details {
     border: none;
     border-radius: 15px;
     white-space: nowrap;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
 }
 
 .secondary-button {
@@ -67,6 +69,8 @@ input:checked + details {
     border: none;
     border-radius: 15px;
     white-space: nowrap;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
 }
 
 .secondary-button img {
@@ -80,6 +84,12 @@ input:checked + details {
     border-radius: 20px;
     background-color: @white;
     white-space: nowrap;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.accent-button:hover, .secondary-button:hover, .tertiary-button:hover {
+    transform: scale(1.1);
 }
 
 @media screen and (min-width: @tablet) {
@@ -99,4 +109,18 @@ input:checked + details {
 
 @media screen and (min-width: @desktop) {
     // Styles for desktop view
+    .accent-button {
+        width: 8.5rem;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .secondary-button {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: @bigScreen) {
+    // Styles for big desktop view
+    
 }

@@ -5,7 +5,7 @@
     &__wrapper {
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
+        padding: 40px 0;
     }
 
     &__title-wrapper {
@@ -92,4 +92,47 @@
 
 @media screen and (min-width: @desktop) {
     // Styles for desktop view
+    .hero {
+        &__wrapper {
+            padding: 5% 6%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        &__title {
+            margin-top: 20px;
+            align-self: start;
+            text-align: start;
+            max-width: 93%;
+        }
+
+        &__description {
+            text-align: justify;
+            align-self: start;
+            max-width: 75%;
+        }
+
+        &__register {
+            text-align: center;
+            align-self: start;
+            width: 140px;
+            height: 26px;
+        }
+
+        &__demo-container {
+            width: 100%;
+        }
+    
+        &__demo-img-container {
+            margin: 0;
+        }
+    
+        &__demo-img-container img {
+            margin: 40px 0;
+            padding-left: 60px;
+            max-width: 65%;
+            height: auto;
+        }
+    }
 }

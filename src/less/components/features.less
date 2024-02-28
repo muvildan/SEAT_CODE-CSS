@@ -4,7 +4,8 @@
     &__wrapper {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 20px;
+        padding: 40px 0;
     }
 
     &__title-wrapper {
@@ -30,31 +31,20 @@
     }
 
     &__credit-card-container {
-        background-color: transparent;
-        margin: 10px 0;
-        width: 100%;
-        max-height: 450px;
-        overflow-x: hidden;
-        overflow-y: visible;
+        max-width: 100%;
     }
 
     &__credit-card-img-container {
-        background-color: transparent;
-        width: 100%;
-        height: 0;
-        padding-top: calc(23.2/40 * 100%);
-        position: relative;
-        overflow: hidden;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__credit-card-img-container img {
-        position: absolute;
-        margin: 0;
-        top: 0;
-        left: 42px;
-        width: 80%;
-        height: 80%;
-        object-fit: cover;
+        max-width: 65%;
+        height: auto;
+        box-shadow: 0px 25px 50px 0px rgba(22,25,79,0.05);
     }
 
     &__cards-wrapper {
@@ -139,7 +129,7 @@
     // Styles for tablet view
     .features {
         &__wrapper {
-            margin: 0 0 80px 0;
+            padding: 40px 20px;
             display: flex;
             flex-direction: row;
             gap: 20px;
@@ -163,7 +153,7 @@
         }
 
         &__title-wrapper {
-            width: 90%;
+            width: 50%;
             align-items: self-end;
         }
 
@@ -177,12 +167,29 @@
             text-align: end;
         }
 
+        &__credit-card-img-container img {
+            max-width: 80%;
+            height: auto;
+        }
+
         &__cards-wrapper {
             min-width: 55%;
         }
 
+        &__small-card {
+            padding: 15px;
+            min-width: 45%;
+            height: 100px;
+        }
+
+        &__small-card-title {
+            padding: 0 5px;
+            white-space: nowrap;
+        }
+
         &__big-card {
-            margin: 0;
+            margin: 0 6%;
+            width: 85%;
         }
 
         &__chat-wrapper {
@@ -200,4 +207,78 @@
 
 @media screen and (min-width: @desktop) {
     // Styles for desktop view
+    .features {
+        &__wrapper {
+            margin: 5% 6%;
+            gap: 100px;
+        }
+
+        &__title-wrapper {
+            width: 40%;
+            align-items: center;
+            text-align: justify;
+            gap: 20px;
+        }
+
+        &__title {
+            line-height: 60px;
+        }
+
+        &__title, &__description {
+            width: 75%;
+            text-align: start;
+        }
+
+        &__invert {
+            align-items: center;
+        }
+
+        &__credit-card-img-container img {
+            max-width: 100%;
+        }
+
+        &__cards-wrapper {
+            width: 50%;
+        }
+    
+        &__small-cards-wrapper{
+            width: 100%;
+        }
+    
+        &__small-card {
+            min-width: 0;
+            width: 193px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        &__small-card h4 {
+            margin: 20px;
+        }
+    
+        &__small-card h2 {
+            margin: 20px;
+        }
+    
+        &__big-card {
+            display: flex;
+            justify-content: center;
+            padding: 15px 15px 0 15px;
+            border-radius: 35px;
+            box-shadow: 0px 25px 50px 0px rgba(22,25,79,0.05);
+            background-color: @white;
+            align-items: center;
+            align-self: center;
+            width: 433px;
+            height: 218px;
+            margin-bottom: 0px;
+        }
+    
+        &__big-card img {
+            max-width: 95%;
+            max-height: 95%;
+        }
+    }
 }

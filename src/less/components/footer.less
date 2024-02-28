@@ -39,6 +39,7 @@
     }
 
     &__link {
+        color: @secondary-dark-color;
         width: 60%;
         text-decoration: none;
         text-align: start;
@@ -53,23 +54,19 @@
     // Styles for desktop view
     .footer {
         &__wrapper {
-            flex-direction: row-reverse;
+            flex-direction: column-reverse;
             justify-content: space-between;
-            align-items: flex-start;
-            margin: 30px 0 0 0;
-            padding: 10px;
-            background-color: #DCE2F0;
         }
 
         &__copyright-wrapper {
             margin: 30px 0;
-            min-width: 40%;
+            min-width: 50%;
             align-items: center;
             gap: 20px;
         }
 
         &__links-wrapper {
-            width: 60%;
+            width: 80%;
             margin: 30px auto;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, 1fr);
@@ -86,4 +83,29 @@
 
 @media screen and (min-width: @desktop) {
     // Styles for desktop view
+    .footer {
+        &__wrapper {
+            flex-direction: row-reverse;
+        }
+
+        &__copyright-wrapper {
+            flex-direction: column;
+            margin: 80px 150px;
+            min-width: 0;
+            width: 30%;
+            align-items: flex-start;
+        }
+
+        &__links-wrapper {
+            width: 50%;
+            margin: 80px 250px 80px 50px;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+
+        &__link {
+            width: 33%;
+            text-align: start;
+        }
+    }
 }

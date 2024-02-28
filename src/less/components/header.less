@@ -43,6 +43,7 @@
     // Styles for tablet view
     .header {
         background-image: url('../../../src/assets/tablet-bg.png');
+        padding: 2%;
 
         &__logo img {
             max-width: 50px;
@@ -61,10 +62,26 @@
     // Styles for desktop view
     .header {
         background-image: url('../../../src/assets/desktop-bg.png');
-    }
 
-    .header .accent-button {
-        max-height: none;
-        border-radius: 20px;
+        &__container {
+            justify-content: space-around;
+        }
+        
+        &__nav-list {
+            min-width: 25vw;
+            gap: 20px;
+        }
+
+        &__logo img {
+            max-width: 48px;
+            max-height: 52px;
+        }
+    }
+}
+
+@media screen and (min-width: @bigScreen) {
+    // Styles for big desktop view
+    .header {
+        padding: 5% 6%;
     }
 }
