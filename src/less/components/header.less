@@ -1,0 +1,43 @@
+@import "../utilities/theme.less";
+
+// Header
+.header {
+    &__container {
+        margin: 10px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    &__nav-list {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+        gap: 20px;
+    }
+
+    &__nav-link {
+        color: @black;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: @tablet) {
+    // Styles for tablet view
+}
+
+@media screen and (min-width: @desktop) {
+    // Styles for desktop view
+    header .accent-button {
+        max-height: none;
+        border-radius: 20px;
+    }
+}

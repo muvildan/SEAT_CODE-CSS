@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEAT:CODE - Assessment</title>
+    <meta name="description" content="Landing page built to showcase a set of hard and soft skills during SEAT:CODE's CSS Challenge">
+    <meta name="keywords" content="banking, finance, services, freelance, entrepeneur, digital, smart, app">
+    <meta name="author" content="Daniel Vilches Muñoz">
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <!-- Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <!-- Modernizr (for feature detection) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">
+                <img srcset="./assets/logo.png" alt="Draft logo" />
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list medium-text">
+                    <li class="header__nav-item"><a href="#home" class="header__nav-link">Home</a></li>
+                    <li class="header__nav-item"><a href="#features" class="header__nav-link">Features</a></li>
+                    <li class="header__nav-item"><a href="#pricing" class="header__nav-link">Pricing</a></li>
+                </ul>
+            </nav>
+            <button class="accent-button medium-text">
+                Sign up
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="hero__wrapper">
+            <div class="hero__title-wrapper">
+                <h1 class="hero__title">Smart Banking <br/> for freelancers</h1>
+                <p class="hero__description body-main">Draft is a revolutionary mobile app built to help you manage your business easily and save your money.</p>
+                <a class="hero__register secondary-button">Register Now <img src="./assets/arrow-right.png" alt="arrow right icon"/></a>
+            </div>
+            <div class="hero__demo-container">
+                <div class="hero__demo-img-container">
+                    <img src="./assets/demo-phone.png" alt="Demo on phone">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="features__wrapper">
+            <div class="features__title-wrapper">
+                <h2 class="features__title">One card for all <br/> your payments</h2>
+                <p class="features__description body-main">Get 3% back on everything you buy with the Draft card. Register today and enjoy every aspect of your business.</p>
+            </div>
+            <div class="features__credit-card-container">
+                <div class="features__credit-card-img-container">
+                    <img src="./assets/credit-card.png" alt="Credit card">
+                </div>
+            </div>
+        </div>
+        <div class="features__wrapper">
+            <div class="features__title-wrapper">
+                <h2 class="features__title">Manage your<br/>finances like a<br/>pro in no time</h2>
+                <p class="features__description body-main">With Draft, book keeping, banking, and invoices are all in one place. You will always know where you stand. </p>
+                <a class="hero__register secondary-button">Learn More<img src="./assets/arrow-right.png" alt="arrow right icon"/></a>
+            </div>
+            <div class="features__cards-wrapper">
+                <div class="features__small-cards-wrapper">
+                    <div class="features__small-card">
+                        <h4 class="features__small-card-title body-main">Balance</h4>
+                        <h2 class="features__small-card-money">$5,600</h2>
+                    </div>
+                    <div class="features__small-card">
+                        <h4 class="features__small-card-title body-main">Last Transaction</h4>
+                        <h2 class="features__small-card-money">$230</h2>
+                    </div>
+                </div>
+                <div class="features__big-card">
+                    <img src="./assets/bars-graph.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="features__wrapper">
+            <div class="features__title-wrapper">
+                <h2 class="features__title">We support you <br/>in 5 different <br/>languages</h2>
+                <p class="features__description body-main">Our support team in here to help you in 5 languages - English, French, Spanish, Polish and German.</p>
+                <div class="features__languages-profiles">
+                    <img src="./assets/profiles.png" alt="profiles"/> 
+                    <div class="body-main">+20</div>
+                </div>
+            </div>
+            <div class="features__chat-wrapper">
+                <img src="./assets/chat.png" alt="chats"/>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="pricing__wrapper">
+            <div class="pricing__title-wrapper">
+                <h3 class="pricing__title">An exceptional service, <span class="pricing__title-span">at the right place.</span></h3>
+                <p class="pricing__description main-body">Start with our free plan and switch to premium as you grow</p>
+            </div>
+            <div class="pricing__cards-wrapper">
+                <div class="pricing__card">
+                    <h3 class="pricing__card-tier">FREE</h3>
+                    <h1 class="pricing__card-price">$0/m</h1>
+                    <p class="pricing__card-description body-main">Manage your business with a simple and efficient account</p>
+                    <button class="pricing__card-button tertiary-button">Get Started</button>
+                    <div class="features__credit-card-container">
+                        <div class="features__credit-card-img-container">
+                            <img src="./assets/credit-card.png" alt="Credit card">
+                        </div>
+                    </div>
+                    <ul class="pricing__includes-wrapper">
+                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>10 free local transfer</ol>
+                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>10 free local transfer</ol>
+                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Multi-user access</ol>
+                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Prepaid debit cards</ol>
+                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Virtual cards</ol>
+                        <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Priority 24/7 support</ol>
+                        <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Exchange 24 currencies</ol>
+                        <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Free payment to other Draft</ol>
+                    </ul>
+                </div>
+                <div class="pricing__card">
+                    <h3 class="pricing__card-tier">PREMIUM</h3>
+                    <h1 class="pricing__card-price">$8/m</h1>
+                    <p class="pricing__card-description body-main">Priority support and multi-user access to maximize your productivity</p>
+                    <button class="pricing__card-button tertiary-button">Get Started</button>
+                    <div class="features__credit-card-container">
+                        <div class="features__credit-card-img-container">
+                            <img src="./assets/credit-card.png" alt="Credit card">
+                        </div>
+                    </div>
+                    <ul class="pricing__includes-wrapper">
+                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>10 free local transfer</ol>
+                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>10 free local transfer</ol>
+                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Multi-user access</ol>
+                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Prepaid debit cards</ol>
+                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Virtual cards</ol>
+                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Priority 24/7 support</ol>
+                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Exchange 24 currencies</ol>
+                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Free payment to other Draft</ol>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faqs">
+        <h2>Contact Us</h2>
+        <p>Your contact form or information goes here...</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>

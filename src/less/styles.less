@@ -1,0 +1,46 @@
+@import "./utilities/theme.less";
+@import "./components/header.less";
+@import "./components/hero.less";
+@import "./components/features.less";
+@import "./components/pricing.less";
+
+body {
+    font-family: @font-family;
+    background-color: @neutral-color;
+    margin: 0;
+}
+
+// Common to several sections
+.accent-button {
+    max-height: 25px;
+    padding: 0 10px;
+    color: @white;
+    background-color: @accent-color;
+    border: none;
+    border-radius: 15px;
+}
+
+.secondary-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: @white;
+    padding: 5px 15px;
+    background-color: @secondary-dark-color;
+    border: none;
+    border-radius: 15px;
+}
+
+.secondary-button img {
+    width: 18px;
+    height: 18px;
+}
+
+.tertiary-button {
+    border: @secondary-dark-color solid 1.5px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: @white;
+}

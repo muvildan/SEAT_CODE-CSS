@@ -1,0 +1,68 @@
+@import "../utilities/theme.less";
+
+// Section 1: Hero
+.hero {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+
+    &__description {
+        margin: 0 0 10px 0;
+        max-width: 80%;
+        text-align: justify;
+    }
+
+    &__register {
+        max-width: 33%;
+    }
+
+    &__demo-container {
+        background-color: transparent;
+        margin: 5px 0;
+        width: 100%;
+        min-height: 525px;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+    &__demo-img-container {
+        background-color: transparent;
+        width: 100%;
+        height: 0;
+        padding-top: calc(31/23 * 100%);
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__demo-img-container img {
+        position: absolute;
+        margin: 50px 0 10px 0;
+        top: -70px;
+        left: -10px;
+        width: 120%;
+        height: 120%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: @tablet) {
+    // Styles for tablet view
+}
+
+@media screen and (min-width: @desktop) {
+    // Styles for desktop view
+}
