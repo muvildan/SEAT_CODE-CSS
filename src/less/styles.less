@@ -6,6 +6,7 @@
 @import "./components/faq.less";
 @import "./components/footer.less";
 
+// Common to several sections
 html {
     scroll-behavior: smooth;
 }
@@ -25,7 +26,7 @@ details > summary {
     list-style: none;
 }
 
-  details > summary::-webkit-details-marker {
+details > summary::-webkit-details-marker {
     display: none;
 }
 
@@ -44,7 +45,6 @@ input:checked + details {
     max-height: 200px;
 }
 
-// Common to several sections
 .accent-button {
     max-height: 35px;
     padding: 5px 10px;
@@ -92,6 +92,16 @@ input:checked + details {
     transform: scale(1.1);
 }
 
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
 @media screen and (min-width: @tablet) {
     // Styles for tablet view
     .accent-button {
@@ -104,7 +114,7 @@ input:checked + details {
         padding: 15px 30px;
         border-radius: 20px;
     }
-    
+
 }
 
 @media screen and (min-width: @desktop) {
@@ -118,9 +128,4 @@ input:checked + details {
     .secondary-button {
         justify-content: center;
     }
-}
-
-@media screen and (min-width: @bigScreen) {
-    // Styles for big desktop view
-    
 }

@@ -109,47 +109,94 @@
                 <p class="pricing__description main-body">Start with our free plan and switch to premium as you grow</p>
             </div>
             <div class="pricing__cards-wrapper">
-                <div class="pricing__card">
-                    <h3 class="pricing__card-tier">FREE</h3>
-                    <h1 class="pricing__card-price">$0/m</h1>
-                    <p class="pricing__card-description body-main">Manage your business with a simple and efficient account</p>
-                    <button class="pricing__card-button tertiary-button">Get Started</button>
-                    <div class="features__credit-card-container">
-                        <div class="pricing__credit-card-img-container">
-                            <img src="./assets/credit-card.png" alt="Credit card">
-                        </div>
-                    </div>
-                    <ul class="pricing__includes-wrapper">
-                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>10 free local transfer</ol>
-                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>10 free local transfer</ol>
-                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Multi-user access</ol>
-                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Prepaid debit cards</ol>
-                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Virtual cards</ol>
-                        <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Priority 24/7 support</ol>
-                        <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Exchange 24 currencies</ol>
-                        <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Free payment to other Draft accounts</ol>
-                    </ul>
-                </div>
-                <div class="pricing__card">
-                    <h3 class="pricing__card-tier">PREMIUM</h3>
-                    <h1 class="pricing__card-price">$8/m</h1>
-                    <p class="pricing__card-description body-main">Priority support & multi-user access to maximize your productivity</p>
-                    <button class="pricing__card-button tertiary-button">Get Started</button>
-                    <div class="features__credit-card-container">
-                        <div class="pricing__credit-card-img-container">
-                            <img src="./assets/credit-card.png" alt="Credit card">
-                        </div>
-                    </div>
-                    <ul class="pricing__includes-wrapper">
-                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>10 free local transfer</ol>
-                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>10 free local transfer</ol>
-                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Multi-user access</ol>
-                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Prepaid debit cards</ol>
-                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Virtual cards</ol>
-                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Priority 24/7 support</ol>
-                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Exchange 24 currencies</ol>
-                        <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Free payment to other Draft accounts</ol>
-                    </ul>
+                <div class="swiper-container">
+                    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="auto"
+                    centered-slides="true" space-between="30">
+                        <swiper-slide class="pricing__card">
+                                <h3 class="pricing__card-tier">FREE</h3>
+                                <h1 class="pricing__card-price">$0/m</h1>
+                                <p class="pricing__card-description body-main">Manage your business with a simple and efficient account</p>
+                                <button class="pricing__card-button tertiary-button">Get Started</button>
+                                <div class="features__credit-card-container">
+                                    <div class="pricing__credit-card-img-container">
+                                        <img src="./assets/credit-card.png" alt="Credit card">
+                                    </div>
+                                </div>
+                                <ul class="pricing__includes-wrapper">
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>10 free local transfer</ol>
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>10 free local transfer</ol>
+                                    <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Multi-user access</ol>
+                                    <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Prepaid debit cards</ol>
+                                    <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Virtual cards</ol>
+                                    <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Priority 24/7 support</ol>
+                                    <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Exchange 24 currencies</ol>
+                                    <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Free payment to other Draft accounts</ol>
+                                </ul>
+                        </swiper-slide>
+                        <swiper-slide class="pricing__card">
+                                <h3 class="pricing__card-tier">PREMIUM</h3>
+                                <h1 class="pricing__card-price">$8/m</h1>
+                                <p class="pricing__card-description body-main">Priority support & multi-user access to maximize productivity</p>
+                                <button class="pricing__card-button tertiary-button">Get Started</button>
+                                <div class="features__credit-card-container">
+                                    <div class="pricing__credit-card-img-container">
+                                        <img src="./assets/credit-card.png" alt="Credit card">
+                                    </div>
+                                </div>
+                                <ul class="pricing__includes-wrapper">
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>10 free local transfer</ol>
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>10 free local transfer</ol>
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Multi-user access</ol>
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Prepaid debit cards</ol>
+                                    <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Virtual cards</ol>
+                                    <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Priority 24/7 support</ol>
+                                    <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Exchange 24 currencies</ol>
+                                    <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Free payment to other Draft accounts</ol>
+                                </ul>
+                        </swiper-slide>
+                        <swiper-slide class="pricing__card">
+                                <h3 class="pricing__card-tier">MASTER</h3>
+                                <h1 class="pricing__card-price">$10/m</h1>
+                                <p class="pricing__card-description body-main">Best value. Give your business a huge push with this package.</p>
+                                <button class="pricing__card-button tertiary-button">Get Started</button>
+                                <div class="features__credit-card-container">
+                                    <div class="pricing__credit-card-img-container">
+                                        <img src="./assets/credit-card.png" alt="Credit card">
+                                    </div>
+                                </div>
+                                <ul class="pricing__includes-wrapper">
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>10 free local transfer</ol>
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>10 free local transfer</ol>
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Multi-user access</ol>
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Prepaid debit cards</ol>
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Virtual cards</ol>
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Priority 24/7 support</ol>
+                                    <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Exchange 24 currencies</ol>
+                                    <ol class="pricing__not-includes"><img src="./assets/check.png" alt="check icon"/>Free payment to other Draft accounts</ol>
+                                </ul>
+                        </swiper-slide>
+                        <swiper-slide class="pricing__card">
+                                <h3 class="pricing__card-tier">ULTRA</h3>
+                                <h1 class="pricing__card-price">$25/m</h1>
+                                <p class="pricing__card-description body-main">For those who breathe entrepeneurship. Enjoy our best work!</p>
+                                <button class="pricing__card-button tertiary-button">Contact Us</button>
+                                <div class="features__credit-card-container">
+                                    <div class="pricing__credit-card-img-container">
+                                        <img src="./assets/credit-card.png" alt="Credit card">
+                                    </div>
+                                </div>
+                                <ul class="pricing__includes-wrapper">
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>10 free local transfer</ol>
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>10 free local transfer</ol>
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Multi-user access</ol>
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Prepaid debit cards</ol>
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Virtual cards</ol>
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Priority 24/7 support</ol>
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Exchange 24 currencies</ol>
+                                    <ol class="pricing__includes"><img src="./assets/check.png" alt="check icon"/>Free payment to other Draft accounts</ol>
+                                </ul>
+                        </swiper-slide>
+                    </swiper-container>
                 </div>
             </div>
         </div>
@@ -259,6 +306,10 @@
 
     <!-- JS -->
     <script src="./js/script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     
 </body>
 </html>
+
