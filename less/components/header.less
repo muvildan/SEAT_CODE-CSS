@@ -6,8 +6,8 @@
     background-repeat: no-repeat;
     background-size: 100%;
     
-
     &__container {
+        padding: 20px 20px 0 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -21,22 +21,58 @@
         max-height: 40px;
     }
 
-    &__nav-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        list-style-type: none;
-        gap: 20px;
+    &__hamburger {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    &__hamburger-line {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: @white;
+        margin: 5px;
     }
 
-    &__nav-link {
-        color: @white;
-        text-decoration: none;
+    &__big-nav {
+        display: none;
     }
+
+    &__small-nav {
+        display: none;
+    }
+
+    &__small-nav.active {
+        display: flex;
+        justify-items: center;
+        justify-content: flex-end;
+        width: 97%;
+    }
+
+    &__small-nav-item a {
+        color: @white;
+        display: block;
+    }
+
+    &__small-nav-list {
+        padding: 0;
+        margin: 0;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+        list-style-type: none;
+    }  
 
     &__signup-button {
-        margin: 0 20px 0 0;
+        display: none;
     }
+
 }
 
 @media screen and (min-width: @tablet) {
@@ -45,16 +81,51 @@
         background-image: url('../assets/tablet-bg.png');
         padding: 2%;
 
+        &__container {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
         &__logo img {
             max-width: 50px;
             max-height: 50px;
         }
 
-        &__nav-list {
-            font-size: 17px;
-            min-width: 40vw;
-            gap: 40px;
+        &__hamburger {
+            display: none;
         }
+
+        &__small-nav {
+            display: none;
+        }
+
+        &__small-nav-item a {
+            display: none;
+        }
+
+        &__big-nav {
+            display: block;
+        }
+
+        &__big-nav-list {
+            min-width: 40vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 17px;
+        }
+
+        &__big-nav-item {
+            list-style: none;
+            a {
+                color: @white;
+            }
+        }
+
+        &__signup-button {
+            display: block;
+        }
+        
     }
 }
 
@@ -64,10 +135,10 @@
         background-image: url('../assets/desktop-bg.png');
 
         &__container {
-            justify-content: space-around;
+            justify-content: space-between;
         }
         
-        &__nav-list {
+        &__big-nav-list {
             min-width: 25vw;
             gap: 20px;
         }
@@ -76,6 +147,7 @@
             max-width: 48px;
             max-height: 52px;
         }
+
     }
 }
 

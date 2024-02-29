@@ -1,3 +1,15 @@
+
+// Define a function to handle hamburger menu functionality
+export function initHamburgerMenu() {
+  const hamburgerBtn = document.querySelector('.header__hamburger');
+  const nav = document.querySelector('.header__small-nav');
+
+  // Add click event listener to toggle navigation visibility
+  hamburgerBtn.addEventListener('click', function() {
+      nav.classList.toggle('active');
+  });
+}
+
 // Function to fetch data from the API and display it on a chart
 export function displayCovidData(elementId) {
     fetch('https://api.covidtracking.com/v1/us/daily.json')

@@ -28,15 +28,38 @@
             <a href="#" class="header__logo">
                 <img srcset="./assets/logo.webp" alt="Draft logo" />
             </a>
-            <nav class="header__nav">
-                <ul class="header__nav-list medium-text">
-                    <li class="header__nav-item"><a href="#home" class="header__nav-link">Home</a></li>
-                    <li class="header__nav-item"><a href="#features" class="header__nav-link">Features</a></li>
-                    <li class="header__nav-item"><a href="#pricing" class="header__nav-link">Pricing</a></li>
+            <!-- MOBILE HAMBURGER -->
+            <button class="header__hamburger" aria-label="Toggle navigation">
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+            </button>
+            <!-- TABLET & DESKTOP NAV -->
+            <nav class="header__big-nav">
+                <ul class="header__big-nav-list medium-text">
+                    <li class="header__big-nav-item"><a href="#home" class="header__nav-link">Home</a></li>
+                    <li class="header__big-nav-item"><a href="#features" class="header__nav-link">Features</a></li>
+                    <li class="header__big-nav-item"><a href="#pricing" class="header__nav-link">Pricing</a></li>
                 </ul>
             </nav>
             <a href="#" class="header__signup-button accent-button medium-text">Sign up</a>
         </div>
+        <!-- MOBILE NAV -->
+        <nav class="header__small-nav">
+            <ul class="header__small-nav-list medium-text">
+                <li class="header__small-nav-item"><a href="#" class="header__signup-button accent-button medium-text">Sign up</a></li>
+                <li class="header__small-nav-item"><a href="#home" class="header__nav-link">Home</a></li>
+                <li class="header__small-nav-item"><a href="#features" class="header__nav-link">Features</a></li>
+                <li class="header__small-nav-item"><a href="#pricing" class="header__nav-link">Pricing</a></li>
+            </ul>
+        </nav>
+        <!-- MOBILE NAV BAR script -->
+        <script type="module">
+            import { initHamburgerMenu } from './js/script.js';
+            document.addEventListener('DOMContentLoaded', function() {
+                initHamburgerMenu();
+            });
+        </script>
 
         <!-- HERO section -->
         <section class="hero">
