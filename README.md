@@ -58,7 +58,7 @@ For the sake of providing good SEO conversion, I have chosen several keywords th
 
 Also, with accessibility in mind, I have tried to make sound use of the alt property of images, and I have made use of specific element tags, from the most usual ones like the div, to some rare ones like summary, details, or canvas.
 
-Performance-wise, I decided to only use WEBP images so that I could reduce as much as possible the loading time for assets and their memory usage. On that line, most animations have been coded by myself (except for the swiper), like the accordions for the FAQ section, which recently received this new feature!
+Performance-wise, I decided to use WEBP images for elements and PNG for backgrounds so that I could reduce as much as possible the loading time for assets and their memory usage. On that line, most animations have been coded by myself (except for the swiper), like the accordions for the FAQ section, which recently received this new feature!
 
 Last but not least, if I had to point out something I'd improve, I'd say the header section of the mobile view. Unfortunately, I did not have time to implement a hamburger menu for its navigation bar, but I am fully aware that's the n1 priority that'd fall on my backlog.
 
