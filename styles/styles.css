@@ -185,7 +185,7 @@ h4 {
 }
 @media screen and (min-width: 1025px) {
   .header {
-    background-image: url('../../assets/desktop-bg.webp');
+    background-image: url('../assets/desktop-bg.webp');
   }
   .header__container {
     justify-content: space-around;
