@@ -64,17 +64,17 @@ I hope you enjoyed the result. I will greatly appreciate having feedback on what
 ## Screenshots
 Here are some screenshots from the project:
 
-![Mobile view](./src/assets/mobile-view.png)
+![Mobile view](./assets/mobile-view.png)
 *Mobile view*
 
-![Tablet view](./src/assets/tablet-view.png)
+![Tablet view](./assets/tablet-view.png)
 *Tablet view*
 
-![Desktop view](./src/assets/desktop-view.png)
+![Desktop view](./assets/desktop-view.png)
 *Desktop view*
 
-![Swiper for tablets](./src/assets/swiper-view.png)
+![Swiper for tablets](./assets/swiper-view.png)
 *Swiper for tablets*
 
-![Graph for desktop](./src/assets/graph-view.png)
+![Graph for desktop](./assets/graph-view.png)
 *Graph for desktop*
