@@ -138,7 +138,7 @@ h4 {
   }
 }
 .header {
-  background-image: url('../../../src/assets/mobile-bg.webp');
+  background-image: url('../../assets/mobile-bg.webp');
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -170,7 +170,7 @@ h4 {
 }
 @media screen and (min-width: 768px) {
   .header {
-    background-image: url('../../../src/assets/tablet-bg.webp');
+    background-image: url('../../assets/tablet-bg.webp');
     padding: 2%;
   }
   .header__logo img {
@@ -185,7 +185,7 @@ h4 {
 }
 @media screen and (min-width: 1025px) {
   .header {
-    background-image: url('../../../src/assets/desktop-bg.webp');
+    background-image: url('../../assets/desktop-bg.webp');
   }
   .header__container {
     justify-content: space-around;

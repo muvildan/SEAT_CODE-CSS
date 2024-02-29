@@ -55,6 +55,12 @@ Last but not least, if I had to point out something I'd improve, I'd say the hea
 
 I hope you enjoyed the result. I will greatly appreciate having feedback on what I could improve or iterate from here onwards.
 
+## Backlog
+
+1. Hamburger nav bar for mobile view
+2. LESS refactor + use of mixins
+3. Loading view while data is being fetched
+
 ## Screenshots
 Here are some screenshots from the project:
 
