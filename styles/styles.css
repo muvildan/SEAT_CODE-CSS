@@ -190,7 +190,7 @@ h4 {
 }
 .header__small-nav-list {
   padding: 0;
-  margin: 0;
+  margin: 0 15px 0 0;
   width: 17%;
   display: flex;
   flex-direction: column;
@@ -269,7 +269,7 @@ h4 {
 .hero__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 10px 0 40px 0;
+  padding: 40px 0 100px 0;
 }
 .hero__title-wrapper {
   display: flex;
@@ -277,6 +277,9 @@ h4 {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+.hero__title-wrapper :last-child {
+  margin-top: 20px;
 }
 .hero__title {
   max-width: 80%;
@@ -304,7 +307,8 @@ h4 {
   align-items: center;
 }
 .hero__demo-img-container img {
-  padding-left: 75px;
+  padding-top: 65px;
+  padding-left: 80px;
   max-width: 65%;
   height: auto;
 }
@@ -453,7 +457,7 @@ h4 {
   align-self: center;
   width: 320px;
   height: 150px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   filter: drop-shadow(0px 50px 100px rgba(22, 25, 79, 0.1));
 }
 .features__big-card canvas {
@@ -998,8 +1002,9 @@ input:checked + details {
 .secondary-button {
   display: flex;
   flex-direction: row;
+  max-height: 18px;
+  align-items: flex-end;
   justify-content: center;
-  align-items: center;
   gap: 10px;
   color: #FFFFFF;
   padding: 10px;
